@@ -1,0 +1,15 @@
+<button (click)="getPosts()">getPosts</button>
+<input #byID>
+<button (click)="getPost(byID)">getPost</button>
+<input #byUser>
+<button (click)="getPostByUser(byUser)">getPostByUser</button>
+<button (click)="addPost()">addPost</button>
+<button (click)="updatePost()">updatePost</button>
+<input #deleteID>
+<button (click)="getPost(deleteID)">deletePost</button>
+
+<div *ngFor="let p of allPost$ | async  ">
+  {{p.title}}
+</div>
+
+<router-outlet></router-outlet>
