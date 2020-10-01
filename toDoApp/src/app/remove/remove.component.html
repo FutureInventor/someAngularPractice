@@ -1,0 +1,5 @@
+<ul *ngFor="let pies of pieski; let i = index">
+  <li>{{pies}}</li>
+  <button (click)="move(pies)">Move</button>
+  <button (click)="remove(pies)">Delete</button>
+</ul>

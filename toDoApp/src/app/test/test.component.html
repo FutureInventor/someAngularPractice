@@ -1,0 +1,12 @@
+<!-- <div #ref>
+  <p>{{inputText}}</p>
+  <p>Mój pies to: {{inputDog.name}}</p>
+</div> -->
+
+<ul >
+  <li *ngFor="let task of tasks; let odd = odd" [ngClass]="{'li-odd': odd}">
+    {{task}}
+    <button (click)="showTask(task)">Show</button>
+  </li>
+</ul>
+<ng-content></ng-content>

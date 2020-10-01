@@ -1,0 +1,9 @@
+<ng-container *ngIf="pieski.length > 0; else nZero">
+  <ul *ngFor="let pies of pieski">
+    <li>{{pies}}</li>
+  </ul>
+</ng-container>
+<ng-template #nZero>
+  Pusta Lista
+</ng-template>
+<ng-content></ng-content>

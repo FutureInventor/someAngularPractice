@@ -1,0 +1,9 @@
+li{
+ background: yellow;
+}
+.li-odd {
+  background: forestgreen;
+}
+.li-even {
+  background: rebeccapurple;
+}

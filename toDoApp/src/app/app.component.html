@@ -1,0 +1,8 @@
+<input [ngStyle]="{color: getColor()}" #inputText>
+<button type="button" class="btn btn-danger" (click)="add(inputText)">Show</button>
+<app-test #ref [tasks]="days" (eventH)="selected($event)"></app-test>
+
+<button type="button" class="btn btn-primary">Primary</button>
+
+
+<router-outlet></router-outlet>
